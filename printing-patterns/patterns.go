@@ -15,3 +15,16 @@ func Pattern1(n int) {
 		fmt.Println()
 	}
 }
+
+func Pattern2(n int) {
+	// given n, print the following pattern (example n=3)
+	// *
+	// **
+	// ***
+	for i := 0; i < n; i++ {
+		for j := 0; j < i+1; j++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+}
