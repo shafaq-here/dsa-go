@@ -2,7 +2,7 @@ There are these four steps that you can apply commonly to any pattern printing p
 Learning to print patterns can help you get a strong hold in loops, which are usually used in every other algorithmic problems.
 
 Step 1:
-for the outer loop, count the number of lines, for example suppose n=5 and the pattern to be printed is
+For the outer loop, count the number of lines, for example suppose n=5 and the pattern to be printed is
 *****
 ****
 ***
