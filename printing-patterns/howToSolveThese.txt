@@ -1,0 +1,32 @@
+There are these four steps that you can apply commonly to any pattern printing problem.
+Learning to print patterns can help you get a strong hold in loops, which are usually used in every other algorithmic problems.
+
+Step 1:
+for the outer loop, count the number of lines, for example suppose n=5 and the pattern to be printed is
+*****
+****
+***
+**
+*
+then the outer loop while execute exactly n times(here) ie the number of lines.
+
+Step 2:
+for the step 2, you need to somehow connect the columns and the rows, like how many times the loop will execute wrt the number of rows(n) or the ith row, or what exactly to print. From the above example,
+see that for the ith row(1 indexed), we print/execute n-i+1 stars/times. so we run the inner loop from j=1 to j<= n-i+1
+
+Step 3:
+It is obvious, we print the star inside the inner loop and when we come out of the inner loop we go to the next line ie println.
+
+Step 4:
+Check for symmetry, this is not applicable for all pattern problems.
+In such problems, we might need to print half-half and we might reuse the code as well, you'll see.
+
+
+Note:
+
+main.go is the driver code. 
+All the patterns(Around 22) are written in the patterns.go file as separate functions.
+Always dry run each function before executing them or explaining it to someone.
+How to dry run?
+Simply take n=something, visualize each and every single execution, conditional checks, print statements, etc.
+helps debug the code very easily
