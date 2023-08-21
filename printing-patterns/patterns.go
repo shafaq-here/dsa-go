@@ -82,3 +82,29 @@ func Pattern6(n int) {
 
 	}
 }
+
+func Pattern7(n int) {
+	// given n, print the following pattern (example n=3)
+	//   *
+	//  ***
+	// *****
+
+	for i := 0; i < n; i++ {
+		//spaces
+		for j := 0; j < n-i-1; j++ {
+			fmt.Print(" ")
+		}
+
+		//stars
+		for j := 0; j < (2*i + 1); j++ {
+			fmt.Print("*")
+		}
+
+		//spaces
+		for j := 0; j < n-i-1; j++ {
+			fmt.Print(" ")
+		}
+
+		fmt.Println()
+	}
+}
