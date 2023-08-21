@@ -41,3 +41,16 @@ func Pattern3(n int) {
 		fmt.Println()
 	}
 }
+
+func Pattern4(n int) {
+	// given n, print the following pattern (example n=3)
+	// 1
+	// 22
+	// 333 sidenote: whenever asked to print numbers, try to avoid using 0 indexed loops.
+	for i := 1; i <= n; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Print(i)
+		}
+		fmt.Println()
+	}
+}
