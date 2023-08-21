@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	Pattern5(5)
+	Pattern6(5)
 }
