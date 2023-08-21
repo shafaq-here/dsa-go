@@ -67,3 +67,18 @@ func Pattern5(n int) {
 		fmt.Println()
 	}
 }
+
+func Pattern6(n int) {
+	// given n, print the following pattern (example n=3)
+	// 123
+	// 12
+	// 1
+
+	for i := 0; i < n; i++ {
+		for j := 1; j <= n-i; j++ {
+			fmt.Print(j)
+		}
+		fmt.Println()
+
+	}
+}
