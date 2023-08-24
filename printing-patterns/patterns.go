@@ -108,3 +108,28 @@ func Pattern7(n int) {
 		fmt.Println()
 	}
 }
+
+func Pattern8(n int) {
+	// *****
+	//  ***
+	//   *
+
+	for i := 0; i < n; i++ {
+		//spaces
+		for j := 0; j < i; j++ {
+			fmt.Print(" ")
+		}
+
+		// stars
+		for j := 0; j < 2*n-(2*i+1); j++ {
+			fmt.Print("*")
+		}
+
+		// spaces
+		for j := 0; j < i; j++ {
+			fmt.Print(" ")
+		}
+		fmt.Println()
+	}
+
+}
